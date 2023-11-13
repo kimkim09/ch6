@@ -20,10 +20,10 @@ class _DropDownState extends State<DropDown> {
       body: DropdownButton(
         value: selectedItem,
         items: valueList.map(
-            (value) {
+                (value) {
               return DropdownMenuItem(
                 value: value,
-                  child: Text(value),
+                child: Text(value),
               );
             }
         ).toList(),

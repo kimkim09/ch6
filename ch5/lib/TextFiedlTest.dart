@@ -19,9 +19,9 @@ class _TextFieldTestState extends State<TextFieldTest> {
       body: Column(
         children: [
           Text('$inputText',
-            style: TextStyle(
-              fontSize: 40,
-            )
+              style: TextStyle(
+                fontSize: 40,
+              )
           )
           SizedBox(
             height: 50,
@@ -43,15 +43,20 @@ class _TextFieldTestState extends State<TextFieldTest> {
               });
             },
             decoration: InputDecoration(
-              labelText: '이름을 입력하세요'
+                labelText: '이름을 입력하세요'
             ),
           ),
           SizedBox(
             height: 50,
           ),
           TextField(
+            onChanged: (text){
+              setState(() {
+                inputText = text;
+              });
+            },
             decoration: InputDecoration(
-              labelText: '나이를 입력하세요'
+                labelText: '나이를 입력하세요'
             ),
           ),
         ],

@@ -29,12 +29,12 @@ class _CheckBoxTestState extends State<CheckBoxTest> {
             ),
             SizedBox(height: 50,),
             Switch(
-              value: isChecked!,
+                value: isChecked!,
               onChanged: (value){
-                  setState(() {
-                    isChecked = value;
-                  });
-                }
+                setState(() {
+                  isChecked = value;
+                });
+              },
             ),
           ],
         ),

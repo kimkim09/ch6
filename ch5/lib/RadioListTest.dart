@@ -46,25 +46,14 @@ class _RadioListTestState extends State<RadioListTest> {
           ),
           SizedBox(height: 100,),
           RadioListTile(
-            title: Text('MAN'),
-            value: Gender.MAN,
-            groupValue: gender,
-            onChanged: (value){
+            title: Text('Man'),
+                value: Gender.MAN,
+                groupValue: gender,
+                onChanged: (value){
               setState(() {
                 gender = value;
               });
-            },
-          ),
-          RadioListTile(
-            title: Text('WOMAN'),
-            value: Gender.WOMAN,
-            groupValue: gender,
-            onChanged: (value){
-              setState(() {
-                gender = value;
-              });
-            },
-          ),
+    },
         ],
       ),
     );
